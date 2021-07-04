@@ -80,7 +80,7 @@ function fill_template() {
             hobbit_2: "Nghe nhạc",
             hobbit_3: "Đi phượt, cắm trại",
             hobbit_4: "Đọc sách",
-            kit: "Liên hệ với mình qua",
+            kit: "Liên hệ qua",
         }
     }
     var template = Handlebars.compile(document.querySelector("#template").innerHTML);

@@ -176,6 +176,7 @@
     .s4 {
         background: #1f1f27;
         h2 {
+            text-align: center;
             margin-bottom: 100px;
         }
         .grid {
@@ -201,6 +202,7 @@
     }
     .s5 {
         h2 {
+            text-align: center;
             margin-bottom: 100px;
         }
         .grid {
@@ -241,6 +243,7 @@
     #fullpage {
         .section {
             h2 {
+                text-align: center;
                 font-size: 30px;
                 margin-bottom: 50px;
             }
@@ -262,6 +265,13 @@
             }
         }
         .s2 {
+            h2 {
+                transform: none;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+            }
             .line {
                 img {
                     width: 80%;
@@ -273,6 +283,11 @@
         .s3 {
             h2 {
                 margin-bottom: 60px;
+                transform: none;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
             }
             .line {
                 &::before {
