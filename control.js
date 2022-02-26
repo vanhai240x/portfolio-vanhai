@@ -6,16 +6,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .from(".first-slide img", { y: -150, opacity: 0, duration: 1.5 }, "-=2")
         .from(".first-slide p", { y: -150, opacity: 0, duration: 1.5 }, "-=1.5")
 
+    let isLoad = false;
     new fullpage("#output", {
         licenseKey: 'YOUR KEY HERE',
-        // navigation: true,
         autoScrolling: true,
         scrollHorizontally: true,
         fixedElements: '#header, #scroll',
         onLeave: (origin, desctination, direction) => {
-            tl.from(".container h2", { y: -150, opacity: 0, duration: 1.5 })
-                .from(".container img", { y: -100, opacity: 0, duration: 1 }, "-=1.5")
-                .from(".container p", { y: 60, opacity: 0, duration: .7 }, "-=1.5")
+            if(!isLoad) {
+                isLoad = true;
+                tl.from(".container h2", { y: -150, opacity: 0, duration: 1.5 })
+                    .from(".container img", { y: -100, opacity: 0, duration: 1 }, "-=1.5")
+                    .from(".container p", { y: 60, opacity: 0, duration: .7 }, "-=1.5")
+                setTimeout(() => {
+                    isLoad = false;
+                }, 3000);
+            }
         },
     })
 });
