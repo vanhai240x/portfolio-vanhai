@@ -34,10 +34,10 @@ function fill_template() {
         },
         en: {
             author: "Tran Van Hai",
-            who_im_i: "Who am I?",
+            who_im_i: "Who I am?",
             intro_1: "I am a front-end developer.",
             intro_2: "I come from Gia Lai, 24 years old.",
-            intro_3: "Now I'm working for Rionlab in Danang city.",
+            intro_3: "Now I'm working for Danh Khoi Group in Ho Chi Minh city.",
             adv_skill: "Advanced skill",
             skill_1: "HTML (Pub, Slim).",
             skill_2: "CSS, SCSS, Bootstrap, UiKit, Materialize css,...",
@@ -50,9 +50,12 @@ function fill_template() {
             history_2_t: "6/2020 – 1/2021",
             history_2_p_1: "In Home",
             history_2_p_2: "Freelancer",
-            history_3_t: "2/2021 - Now",
+            history_3_t: "2/2021 - 3/2022",
             history_3_p_1: "In Rionlab",
             history_3_p_2: "Front end developer",
+            history_4_t: "4/2022 - Now",
+            history_4_p_1: "In Danh Khoi Group",
+            history_4_p_2: "Front end developer",
             hobbit: "My hobbits",
             hobbit_1: "Playing video game like",
             hobbit_2: "Listening to music",
@@ -64,8 +67,8 @@ function fill_template() {
             author: "Trần Văn Hải",
             who_im_i: "Đôi chút về tôi",
             intro_1: "Mình là 1 lập trình viên Front-ent",
-            intro_2: "Đến từ Gia Lai và đang 24 tuổi",
-            intro_3: "Hiện đang làm việc tại Rionlab, ở Đà Nẵng",
+            intro_2: "24 tuổi và đến từ Gia Lai",
+            intro_3: "Hiện đang làm việc tại Tập đoàn Danh Khôi, ở TP.Hồ Chí Minh",
             adv_skill: "Kỹ năng chuyên môn",
             skill_1: "HTML (Pub, Slim).",
             skill_2: "CSS, SCSS, Bootstrap, UiKit, Materialize css,...",
@@ -73,14 +76,17 @@ function fill_template() {
             skill_4: "Git, Xd, Photoshop,...",
             history: "Lịch sử làm việc",
             history_1_t: "4/2019 – 5/2020",
-            history_1_p_1: "Làm cho Rionlab",
+            history_1_p_1: "Làm việc cho Rionlab",
             history_1_p_2: "Lập trình viên Front-end",
             history_2_t: "6/2020 – 1/2021",
             history_2_p_1: "Làm việc tại nhà",
             history_2_p_2: "Lập trình viên tự do",
-            history_3_t: "2/2021 - Nay",
-            history_3_p_1: "Làm cho Rionlab",
+            history_3_t: "2/2021 - 3/2022",
+            history_3_p_1: "Làm việc cho Rionlab",
             history_3_p_2: "Lập trình viên Front-end",
+            history_4_t: "4/2022 - Nay",
+            history_4_p_1: "Làm việc cho Tập đoàn Danh Khôi",
+            history_4_p_2: "Lập trình viên Front-end",
             hobbit: "Sở thích cá nhân",
             hobbit_1: "Chơi game",
             hobbit_2: "Nghe nhạc",
@@ -94,7 +100,7 @@ function fill_template() {
     document.querySelector("#output").innerHTML = filled;
 
     $('[lang="vi"]').hide();
-    let lang = localStorage.getItem("lang") ? localStorage.getItem("lang") : "en";
+    let lang = localStorage.getItem("lang") ? localStorage.getItem("lang") : "vi";
     if (lang === "vi") {
         $('[lang="vi"]').toggle();
         $('[lang="en"]').toggle();
@@ -102,7 +108,6 @@ function fill_template() {
     $('#switch-lang').click(function() {
         $('[lang="vi"]').toggle();
         $('[lang="en"]').toggle();
-        console.log(lang);
         lang === "en" ? localStorage.setItem("lang", "vi") : localStorage.setItem("lang", "en");
     });
 }
