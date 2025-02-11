@@ -123,5 +123,8 @@ $(document).ready(function(){
             $(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
         });
 
+	// 6. Auto navigate to new portfolio website
+	window.location.replace('https://portfolio-c4ds1qxh7-vanhai240xs-projects.vercel.app/');
+
 });	
 	
