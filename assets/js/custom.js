@@ -124,7 +124,7 @@ $(document).ready(function(){
         });
 
 	// 6. Auto navigate to new portfolio website
-	window.location.replace('https://portfolio-c4ds1qxh7-vanhai240xs-projects.vercel.app/');
+	window.location.replace('https://portfolio-tan-psi-44.vercel.app/');
 
 });	
 	
